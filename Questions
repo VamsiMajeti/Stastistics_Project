@@ -1,0 +1,15 @@
+Questions answered in the excel file
+1.Basic Stats:
+	•	What is the average bonus, median bonus, bonus range, and mode?
+	•	Calculate Q1, Q2 (median), and Q3 for the bonus.
+	•	Find the IQR (Interquartile Range).
+2.Outliers:
+	•	Calculate the upper and lower bounds.
+	•	Are there any outliers in the bonus column?
+3.Standard Deviation & Z-Score:
+	•	Calculate the standard deviation using STDEV.S() and STDEV.P().
+	•	Compute the Z-score for Simran’s bonus.
+	•	Who is closest to average bonus using Z-score?
+4.Percentiles:
+	•	Find the 80th percentile bonus.
+	•	Calculate the percentile rank for a bonus of 6400.
