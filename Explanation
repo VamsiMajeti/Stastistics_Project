@@ -1,0 +1,43 @@
+ Steps and Formulas Used
+1. Average Bonus (Mean)
+  •	Formula: =AVERAGE(D2:D11)
+	•	This calculates the average of all bonus values.
+2. Median Bonus
+	•	Formula: =MEDIAN(D2:D11)
+	•	Returns the middle value in the sorted bonus data.
+3. Mode Bonus
+	•	Formula: =MODE.SNGL(D2:D11)
+	•	Since there were no repeating values, Excel returned #N/A, meaning no mode exists.
+4. Quartiles (Q1, Q2, Q3)
+	•	First Quartile (25%): =QUARTILE.INC(D2:D11, 1)
+	•	Second Quartile (50% / Median): =QUARTILE.INC(D2:D11, 2)
+	•	Third Quartile (75%): =QUARTILE.INC(D2:D11, 3)
+	•	Quartiles divide the data into four equal parts.
+5. Interquartile Range (IQR)
+	•	Formula: =QUARTILE.INC(D2:D11, 3) - QUARTILE.INC(D2:D11, 1)
+	•	Represents the range of the middle 50% of the data.
+6. Outlier Boundaries
+	•	Upper Bound: Q3 + 1.5 * IQR
+	•	Lower Bound: Q1 - 1.5 * IQR
+	•	These help identify unusually high or low bonus values (outliers).
+7. Z-Score (Standardized Score)
+	•	Formula per employee: (Bonus - Average Bonus) / Standard Deviation
+	•	This shows how far a specific bonus is from the average in terms of standard deviations.
+8. Standard Deviation
+	•	Population: =STDEV.P(D2:D11) — used when the entire dataset is available (rare in data analysis)
+	•	Sample: =STDEV.S(D2:D11) — used when analyzing a sample, which is more typical in real-world scenarios
+9. Bonus Range
+	•	Formula: =MAX(D2:D11) - MIN(D2:D11)
+	•	Represents the spread of bonuses.
+10. 80th Percentile of Bonus
+	•	Formula: =PERCENTILE.INC(D2:D11, 0.8)
+	•	Shows the value below which 80% of the bonuses fall.
+11. Percentile Rank of 6400 Bonus
+	•	Formula: =PERCENTRANK.INC(D2:D11, 6400)
+	•	Displays the relative standing of a bonus of 6400 within the dataset.
+ 
+Key Learnings
+	•	Central tendency (mean, median, mode) provides a foundation for understanding data.
+	•	Quartiles and IQR help in breaking down distributions and identifying the spread.
+	•	Z-scores and outlier bounds are effective for detecting anomalies in performance or rewards.
+	•	Percentile and percentile ranks offer context on how individual values compare to the rest.
